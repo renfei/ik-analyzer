@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/89/trunk/src/org/wltea/analyzer/dic
+END
+DictSegment.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/67/trunk/src/org/wltea/analyzer/dic/DictSegment.java
+END
+surname.dic
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/89/trunk/src/org/wltea/analyzer/dic/surname.dic
+END
+preposition.dic
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/78/trunk/src/org/wltea/analyzer/dic/preposition.dic
+END
+stopword.dic
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/89/trunk/src/org/wltea/analyzer/dic/stopword.dic
+END
+suffix.dic
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/34/trunk/src/org/wltea/analyzer/dic/suffix.dic
+END
+main.dic
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/89/trunk/src/org/wltea/analyzer/dic/main.dic
+END
+Hit.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/src/org/wltea/analyzer/dic/Hit.java
+END
+quantifier.dic
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/38/trunk/src/org/wltea/analyzer/dic/quantifier.dic
+END
+Dictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/78/trunk/src/org/wltea/analyzer/dic/Dictionary.java
+END

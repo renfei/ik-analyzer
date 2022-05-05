@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/88/trunk/src/org/wltea/analyzer/seg
+END
+CJKSegmenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/78/trunk/src/org/wltea/analyzer/seg/CJKSegmenter.java
+END
+QuantifierSegmenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/88/trunk/src/org/wltea/analyzer/seg/QuantifierSegmenter.java
+END
+ISegmenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/31/trunk/src/org/wltea/analyzer/seg/ISegmenter.java
+END
+LetterSegmenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/81/trunk/src/org/wltea/analyzer/seg/LetterSegmenter.java
+END

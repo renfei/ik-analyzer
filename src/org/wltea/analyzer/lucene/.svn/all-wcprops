@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/88/trunk/src/org/wltea/analyzer/lucene
+END
+IKAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/55/trunk/src/org/wltea/analyzer/lucene/IKAnalyzer.java
+END
+IKSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/60/trunk/src/org/wltea/analyzer/lucene/IKSimilarity.java
+END
+IKTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/60/trunk/src/org/wltea/analyzer/lucene/IKTokenizer.java
+END
+IKQueryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/88/trunk/src/org/wltea/analyzer/lucene/IKQueryParser.java
+END

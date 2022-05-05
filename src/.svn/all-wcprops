@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/89/trunk/src
+END
+IKAnalyzer.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/78/trunk/src/IKAnalyzer.cfg.xml
+END
+lucene-smartcn-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/73/trunk/src/lucene-smartcn-3.0.1.jar
+END
+lucene-analyzers-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/73/trunk/src/lucene-analyzers-3.0.1.jar
+END
+ext_stopword.dic
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/85/trunk/src/ext_stopword.dic
+END

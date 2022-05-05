@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/86/trunk/test
+END
+mydict.dic
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/74/trunk/test/mydict.dic
+END
+CH_stopword.dic
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/74/trunk/test/CH_stopword.dic
+END
