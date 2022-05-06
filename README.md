@@ -1,8 +1,10 @@
 # IK-Analyze Java开源中文分词器
 
+![https://search.maven.org/search?q=g:%22net.renfei%22%20AND%20a:%22ik-analyzer%22](https://img.shields.io/maven-central/v/net.renfei/ik-analyzer.svg?label=Maven%20Central)
+![License](https://img.shields.io/github/license/renfei/ik-analyzer)
+
 > IK Analyzer是一个开源的，基于java语言开发的轻量级的中文分词工具包。从2006年12月推出1.0版开始，
->
-IKAnalyzer已经推出了4个大版本。最初，它是以开源项目Luence为应用主体的，结合词典分词和文法分析算法的中文分词组件。从3.0版本开始，IK发展为面向Java的公用分词组件，独立于Lucene项目，同时提供了对Lucene的默认优化实现。在2012版本中，IK实现了简单的分词歧义排除算法，标志着IK分词器从单纯的词典分词向模拟语义分词衍化。
+> IKAnalyzer已经推出了4个大版本。最初，它是以开源项目Luence为应用主体的，结合词典分词和文法分析算法的中文分词组件。从3.0版本开始，IK发展为面向Java的公用分词组件，独立于Lucene项目，同时提供了对Lucene的默认优化实现。在2012版本中，IK实现了简单的分词歧义排除算法，标志着IK分词器从单纯的词典分词向模拟语义分词衍化。
 >
 > ### IK Analyzer 2012特性
 >
@@ -22,6 +24,46 @@ IKAnalyzer已经推出了4个大版本。最初，它是以开源项目Luence为
 * Solr(ik-analyzer-solr): [https://github.com/magese/ik-analyzer-solr](https://github.com/magese/ik-analyzer-solr)
 * ElasticSearch(
   elasticsearch-analysis-ik): [https://github.com/medcl/elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
+
+## 使用示例
+
+Maven 依赖：
+
+```xml
+<dependency>
+    <groupId>net.renfei</groupId>
+    <artifactId>ik-analyzer</artifactId>
+    <version>3.0.0.0</version>
+</dependency>
+```
+
+版本号的说明：前三位代表依赖 lucene 的版本，最后一位是重新发布的次数。
+
+分词：
+
+```java
+String str = "书籍是人类进步的阶梯。";
+IKSegmentation ikSeg = new IKSegmentation(new StringReader(str) , false);
+try {
+    Lexeme l = null;
+    while( (l = ikSeg.next()) != null){
+        System.out.println(l);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+运行结果：
+
+```text
+0-2 : 书籍 : 	CJK_NORMAL
+2-3 : 是 : 	UNKNOWN
+3-5 : 人类 : 	CJK_NORMAL
+5-7 : 进步 : 	CJK_NORMAL
+7-8 : 的 : 	UNKNOWN
+8-10 : 阶梯 : 	CJK_NORMAL
+```
 
 ## 词典
 

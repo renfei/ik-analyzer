@@ -23,7 +23,7 @@ import junit.framework.TestCase;
  */
 public class StandardAnalyzerTest extends TestCase{
 
-	public static void main(String[] args){
+	public  void test(){
 		String testString = null;
 		for (int i = 0; i <300; i++) {
 			testString += "18岁那年，有个自称算命先生看了我的手相后说，此生你将注定与男人纠缠不清。我说怎么可能，我不漂亮，也无贪欲。我不想要太多，一生只想爱一次，只要一个爱我的丈夫，然后我是他的好妻子。为他做饭、洗衣带孩子。我要和他相伴到老。 " 
