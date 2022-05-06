@@ -22,12 +22,12 @@ public class Dictionary {
 	/*
 	 * 分词器默认字典路径 
 	 */
-	public static final String PATH_DIC_MAIN = "/org/wltea/analyzer/dic/main.dic";
-	public static final String PATH_DIC_SURNAME = "/org/wltea/analyzer/dic/surname.dic";
-	public static final String PATH_DIC_QUANTIFIER = "/org/wltea/analyzer/dic/quantifier.dic";
-	public static final String PATH_DIC_SUFFIX = "/org/wltea/analyzer/dic/suffix.dic";
-	public static final String PATH_DIC_PREP = "/org/wltea/analyzer/dic/preposition.dic";
-	public static final String PATH_DIC_STOP = "/org/wltea/analyzer/dic/stopword.dic";
+	public static final String PATH_DIC_MAIN = "dic/main.dic";
+	public static final String PATH_DIC_SURNAME = "dic/surname.dic";
+	public static final String PATH_DIC_QUANTIFIER = "dic/quantifier.dic";
+	public static final String PATH_DIC_SUFFIX = "dic/suffix.dic";
+	public static final String PATH_DIC_PREP = "dic/preposition.dic";
+	public static final String PATH_DIC_STOP = "dic/stopword.dic";
 	
 	
 	/*
@@ -84,7 +84,7 @@ public class Dictionary {
 		//建立一个主词典实例
 		_MainDict = new DictSegment((char)0);
 		//读取主词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_MAIN);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_MAIN);
         if(is == null){
         	throw new RuntimeException("Main Dictionary not found!!!");
         }
@@ -119,7 +119,7 @@ public class Dictionary {
 		if(extDictFiles != null){
 			for(String extDictName : extDictFiles){
 				//读取扩展词典文件
-				is = Dictionary.class.getResourceAsStream(extDictName);
+				is = Dictionary.class.getClassLoader().getResourceAsStream(extDictName);
 				//如果找不到扩展的字典，则忽略
 				if(is == null){
 					continue;
@@ -161,7 +161,7 @@ public class Dictionary {
 		//建立一个姓氏词典实例
 		_SurnameDict = new DictSegment((char)0);
 		//读取姓氏词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_SURNAME);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_SURNAME);
         if(is == null){
         	throw new RuntimeException("Surname Dictionary not found!!!");
         }
@@ -198,7 +198,7 @@ public class Dictionary {
 		//建立一个量词典实例
 		_QuantifierDict = new DictSegment((char)0);
 		//读取量词词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_QUANTIFIER);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_QUANTIFIER);
         if(is == null){
         	throw new RuntimeException("Quantifier Dictionary not found!!!");
         }
@@ -235,7 +235,7 @@ public class Dictionary {
 		//建立一个后缀词典实例
 		_SuffixDict = new DictSegment((char)0);
 		//读取量词词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_SUFFIX);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_SUFFIX);
         if(is == null){
         	throw new RuntimeException("Suffix Dictionary not found!!!");
         }
@@ -272,7 +272,7 @@ public class Dictionary {
 		//建立一个介词\副词词典实例
 		_PrepDict = new DictSegment((char)0);
 		//读取量词词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_PREP);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_PREP);
         if(is == null){
         	throw new RuntimeException("Preposition Dictionary not found!!!");
         }
@@ -310,7 +310,7 @@ public class Dictionary {
 		//建立一个停止词典实例
 		_StopWords = new DictSegment((char)0);
 		//读取量词词典文件
-        InputStream is = Dictionary.class.getResourceAsStream(Dictionary.PATH_DIC_STOP);
+        InputStream is = Dictionary.class.getClassLoader().getResourceAsStream(Dictionary.PATH_DIC_STOP);
         if(is == null){
         	throw new RuntimeException("Stopword Dictionary not found!!!");
         }
@@ -344,7 +344,7 @@ public class Dictionary {
 		if(extStopWordDictFiles != null){
 			for(String extStopWordDictName : extStopWordDictFiles){
 				//读取扩展词典文件
-				is = Dictionary.class.getResourceAsStream(extStopWordDictName);
+				is = Dictionary.class.getClassLoader().getResourceAsStream(extStopWordDictName);
 				//如果找不到扩展的字典，则忽略
 				if(is == null){
 					continue;
