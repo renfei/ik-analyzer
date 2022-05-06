@@ -6,7 +6,7 @@
     <groupId>net.renfei</groupId>
     <artifactId>ik-analyzer</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>3.0.0</version>
     <name>ik-analyzer</name>
     <url>http://www.renfei.net</url>
     <description>ik-analyzer</description>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
-            <version>3.0.0</version>
+            <version>${lucene.version}</version>
         </dependency>
 
         <dependency>
