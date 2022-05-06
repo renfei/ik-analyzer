@@ -18,3 +18,14 @@
 
 * Solr(ik-analyzer-solr): [https://github.com/magese/ik-analyzer-solr](https://github.com/magese/ik-analyzer-solr)
 * ElasticSearch(elasticsearch-analysis-ik): [https://github.com/medcl/elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
+
+## 词典
+
+本仓库词典文件位置：[src/main/resources/dic](src/main/resources/dic)
+
+* 主词典：[main.dic](src/main/resources/dic/main.dic)
+* 介词\副词词典：[preposition.dic](src/main/resources/dic/preposition.dic)
+* 量词词典：[quantifier.dic](src/main/resources/dic/quantifier.dic)
+* 停止词词典：[stopword.dic](src/main/resources/dic/stopword.dic)
+* 后缀词典：[suffix.dic](src/main/resources/dic/suffix.dic)
+* 姓氏词典：[surname.dic](src/main/resources/dic/surname.dic)

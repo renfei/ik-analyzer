@@ -11,6 +11,13 @@
     <url>http://www.renfei.net</url>
     <description>ik-analyzer</description>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javac.src.version>1.8</javac.src.version>
+        <javac.target.version>1.8</javac.target.version>
+        <lucene.version>3.0.0</lucene.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.lucene</groupId>
@@ -38,6 +45,28 @@
         </dependency>
     </dependencies>
 
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <tag>master</tag>
+        <url>https://github.com/renfei/ik-analyzer</url>
+        <connection>scm:git:git@github.com:renfei/ik-analyzer.git</connection>
+        <developerConnection>scm:git:git@github.com:renfei/ik-analyzer.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>renfei</name>
+            <email>i@renfei.net</email>
+        </developer>
+    </developers>
+
     <build>
         <plugins>
             <plugin>
@@ -45,9 +74,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
+                    <source>${javac.src.version}</source>
+                    <target>${javac.src.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
             <plugin>
