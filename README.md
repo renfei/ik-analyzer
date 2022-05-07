@@ -68,7 +68,10 @@ try {
 ## 词典
 
 本仓库词典文件位置：[src/main/resources/dic](src/main/resources/dic)
-，词典可以去搜狗输入法下载词库：[https://pinyin.sogou.com/dict/](https://pinyin.sogou.com/dict/)，将词库文件转换为 txt
+
+我也准备好了词典库：[https://github.com/renfei/dict](https://github.com/renfei/dict)
+
+词典可以去搜狗输入法下载词库：[https://pinyin.sogou.com/dict/](https://pinyin.sogou.com/dict/)，将词库文件转换为 txt
 文件的工具代码可见：[https://github.com/renfei/SogouScelFileProcessing](https://github.com/renfei/SogouScelFileProcessing)
 
 * 主词典：[main.dic](src/main/resources/dic/main.dic)
