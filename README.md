@@ -33,7 +33,7 @@ Maven 依赖：
 <dependency>
     <groupId>net.renfei</groupId>
     <artifactId>ik-analyzer</artifactId>
-    <version>3.0.0.0</version>
+    <version>3.0.0.1</version>
 </dependency>
 ```
 
@@ -63,6 +63,20 @@ try {
 5-7 : 进步 : 	CJK_NORMAL
 7-8 : 的 : 	UNKNOWN
 8-10 : 阶梯 : 	CJK_NORMAL
+```
+### 自定义词典
+
+我们需要载入自己的词典时可以这样：
+
+```java
+Dictionary dictionary = Dictionary.getInstance();
+if (!dictionary.isLoadedCustomDictionary()) {
+    // 没有加载自定义词典，加载自定义词典
+    // https://github.com/renfei/dict
+    CustomDictionary customDictionary = new CustomDictionary();
+    customDictionary.setMainDictInputStream(new FileInputStream("/Users/renfei/Downloads/sogou.txt"));
+    dictionary.loadCustomDictionary(customDictionary);
+}
 ```
 
 ## 词典

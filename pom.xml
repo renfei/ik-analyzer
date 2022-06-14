@@ -6,7 +6,7 @@
     <groupId>net.renfei</groupId>
     <artifactId>ik-analyzer</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.0.0</version>
+    <version>3.0.0.1</version>
     <name>ik-analyzer</name>
     <url>http://www.renfei.net</url>
     <description>ik-analyzer</description>
